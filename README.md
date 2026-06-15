@@ -6,6 +6,7 @@
 * **Resultado Principal:** Se demostró estadísticamente que las variables de tratamiento térmico y la proporción química inicial (mezcla DMF/DMSO) son críticas, mientras que el grosor físico final de la celda no es un predictor lineal relevante para la eficiencia.
 
 ## 2. Procesamiento de Datos (Data Engineering)
+* Ingesta Automatizada: Se diseñó un flujo en Python (urllib) que extrae dinámicamente la base de datos cruda desde un servidor en la nube, garantizando la reproducibilidad del código sin requerir cargas manuales por parte del usuario final.
 * Se partió de una base de datos masiva (+40,000 registros), filtrando dimensionalmente el material objetivo.
 * Se implementó una canalización de limpieza (ETL) manejando valores nulos y purgando métricas de eficiencia físicamente imposibles mediante el límite analítico del Rango Intercuartílico (IQR), asegurando un conjunto robusto de 6,131 observaciones.
 
